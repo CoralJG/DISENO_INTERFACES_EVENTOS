@@ -71,3 +71,11 @@ Yo también puntuaré los proyectos.
 RECORDAD QUE CADA PROYECTO ENTREGADO INFLUIRÁ DE MANERA POSITIVA
 EN LA NOTA FINAL, MIENTRAS QUE CADA PROYECTO NO ENTREGADO INFLUIRÁ
 DE MANERA NEGATIVA
+
+
+
+Integrantes del grupo:
+--> Coral = Hizo la plantilla
+--> Martín
+--> Paula 
+--> Dani 
