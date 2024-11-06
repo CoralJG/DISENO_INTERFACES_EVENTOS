@@ -79,3 +79,34 @@ Integrantes del grupo:
 --> Martín
 --> Paula 
 --> Dani 
+
+
+Cosas a hacer:
+
+Hero_index:
+
+--> Carrusel
+--> 
+
+Paleta Colores:
+
+  Negro: #331a38
+  Morado(osc): #491d88
+  Azul(claro): #43b5a0
+  Amarillo(): #fec859
+  Rosa: #fa448c
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
