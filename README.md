@@ -90,11 +90,11 @@ Hero_index:
 
 Paleta Colores:
 
-  Negro: #331a38
-  Morado(osc): #491d88
-  Azul(claro): #43b5a0
-  Amarillo(): #fec859
-  Rosa: #fa448c
+  Negro: #331a38<br>
+  Morado(osc): #491d88<br>
+  Azul(claro): #43b5a0<br>
+  Amarillo(): #fec859<br>
+  Rosa: #fa448c<br>
 
 
 
