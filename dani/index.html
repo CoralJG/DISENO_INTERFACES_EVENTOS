@@ -7,21 +7,61 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div>
-            <h1>Header</h1>
-        </div>
-    </header>
+    <nav class="nav">
+        <ul>
+            <li><a href=""><img src="../img/logo_epic.png" alt=""></a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Store</a></li>
+            <li><a href="">Biblioteca</a></li>
+            <li><input type="text" placeholder="Search"> <button>Search</button></li>
+
+            
+            <li id="li-derecha"><a  href="">Cart</a></li>
+            <li id="li-derecha"><a href="">lista</a></li>
+            <li id="li-derecha"><a href="">Account</a></li>
+        </ul>
+    </nav>
     <section class="carrito">
         <div class="contenido">
-            <h1>Carrito</h1>
-            <hr>
+            <div class="title">
+                <h1>Carrito</h1>
+                <hr>
+            </div>
+            <div class="producto">
+                <img src="../img\fortnite.jpg">
+                <div class="titulo">
+                    <h2>Titulo juego</h2>
+                    <p>Pequeño resumen</p>
+                </div>
+                <h1>Precio</h1>
+            </div>
+            <div class="producto">
+                <img src="../img\fortnite.jpg">
+                <div class="titulo">
+                    <h2>Titulo juego</h2>
+                    <p>Pequeño resumen</p>
+                </div>
+                <h1>Precio</h1>
+            </div>
+            <div class="producto">
+                <img src="../img\fortnite.jpg">
+                <div class="titulo">
+                    <h2>Titulo juego</h2>
+                    <p>Pequeño resumen</p>
+                </div>
+                <h1>Precio</h1>
+            </div>
         </div>
         <div class="total">
                 <div class="precio">
                     <h1>Total</h1> 
-                    <hr>                  
+                    <hr>
+                    <div class="totalpagar">
+                        <h1>Total a pagar:</h1>
+                        <h1 class="final">PagoTotal</h1>
+                    </div>                  
                 </div>
+                <button><h1>Pagar</h1></button>
         </div>
     </section>
     <script src="script.js"></script>
