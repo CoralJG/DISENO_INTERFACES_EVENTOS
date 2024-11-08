@@ -104,7 +104,7 @@ nav{
     border: white 1px solid;
 }
 .producto{
-    width: 70%;
+    width: 80%;
     height: 20%;
     display: flex;
     flex-direction: row;
@@ -119,7 +119,7 @@ nav{
     flex-direction: column;
 }
 .producto h1{
-    margin-left: 25%;
+    margin-left: 40%;
     padding-top: 4%;
 }
 .total{
@@ -144,7 +144,7 @@ nav{
     flex-direction: column;
     align-items: center;
     margin-top: 25%;
-    background-color:  #503c5a;
+    background-color:  #78558a;
     border-radius:4px;
 }
 hr{
@@ -159,4 +159,7 @@ hr{
 }
 .final{
     margin-left: 3%;
+}
+.boton:hover{
+    background-color:#78558a ;
 }
