@@ -1,6 +1,6 @@
 # DISENO_INTERFACES_EVENTOS
 
-Integrantes del grupo:
+Integrantes del grupo: <br>
 --> Coral = Hizo la plantilla
 --> Martín
 --> Paula 
