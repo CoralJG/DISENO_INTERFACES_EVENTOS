@@ -1,10 +1,10 @@
 # DISENO_INTERFACES_EVENTOS
 
 Integrantes del grupo: <br>
---> Coral = Hizo la plantilla
---> Martín
---> Paula 
---> Dani 
+--> Coral = Hizo la plantilla  <br>
+--> Martín  <br>
+--> Paula  <br>
+--> Dani  <br>
 
 
 Paleta Colores:
