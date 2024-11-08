@@ -91,9 +91,10 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    padding-top: 15px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-top: 25px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 25px;
     background-color: #503c5a;
 
 }
@@ -132,12 +133,12 @@ body {
 
 
 .copyright_footer p{
-    font-size: 10px;
-    color: #aeaeae;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.589);
 }
 
 .footer hr{
-    border: 0.1px solid #aeaeae;
+    border: 0.1px solid rgba(255, 255, 255, 0.288);
 }
 
 .pie_footer{
@@ -151,16 +152,21 @@ body {
     display: flex;
     gap: 20px;
     font-size: 13px;
-    color: #aeaeae;
+    color: rgba(255, 255, 255, 0.589);
 }
 
 .politicas_footer a{
     text-decoration: none;
-    color: #aeaeae;
+    color: rgba(255, 255, 255, 0.589);
+}
+
+.img_footer{
+    display: flex;
+    gap: 12px;
 }
 
 .img_footer img {
-    width: 20px;
+    width: 25px;
 
 }
 
