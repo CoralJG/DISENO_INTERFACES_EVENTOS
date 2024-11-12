@@ -23,6 +23,9 @@ function mostrarCarrito() {
                 <img src="${juego.imagen}" alt="${juego.titulo}">
                 <div class="info">
                     <h3>${juego.titulo}</h3>
+                    <p>${juego.descripcion}</p>
+                </div>
+                <div class="valor">
                     <p>${juego.precio}</p>
                 </div>
                 <button class="eliminar" data-index="${index}">Eliminar</button>

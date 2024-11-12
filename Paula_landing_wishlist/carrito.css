@@ -106,9 +106,15 @@ nav{
 .productos{
     width: 100%;
     height: 90%;
+    padding-left: 15%;
+    padding-bottom: 10%;
+    overflow: auto;
+}
+.productos::-webkit-scrollbar{
+    display: none;
 }
 .producto{
-    width: 90%;
+    width: 80%;
     height: 20%;
     display: flex;
     flex-direction: row;
@@ -116,16 +122,24 @@ nav{
     margin-top: 1%;
     border-radius: 4px;
 }
-
-.titulo{
-    margin-left: 5%;
-    padding-top: 1%;
+.producto img{
+    border-radius: 4px;
+}
+.info{
+    margin-left: 7%;
     display: flex;
     flex-direction: column;
 }
-.producto h1{
-    margin-left: 40%;
+.valor{
+    margin-left: 55%;
     padding-top: 3%;
+}
+.eliminar{
+    width: 11%;
+    margin-left: 8.5%;
+    background-color: #78558a;
+    color: white;
+    border-radius: 4px;
 }
 .total{
     display: flex;
