@@ -100,18 +100,22 @@ body {
 }
 
 .up {
-	background-color: rgba(0, 0, 0, 0.226);
+	background-color: rgba(0, 0, 0, 0.514);
 	color: white;
 	position: relative;
 	z-index: 2;
 	width: 800px;
-	height: 150px;
-	margin: 300px 600px 800px;
+	height: 240px;
+	margin: 280px 600px 730px;
 }
 
 .inside {
 	padding: 3%;
 	margin: auto 10px;
+}
+
+.inside img{
+	width: 90px;
 }
 
 .inside h1 {
@@ -158,4 +162,12 @@ body {
 
 .card ul img {
 	width: 300px;
+}
+
+/*FOOTER*/
+.footer-coloring{
+    background-color:#fec7593c ;
+	padding: 30px;
+    width: 100%;
+	margin: 100px auto auto;
 }

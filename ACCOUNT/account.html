@@ -29,10 +29,22 @@
                 <section class="profile-top">
                     <div class="container">
                         <div class="profile-account">
-                            <img src="./img/fortnite.jpg" alt="icon">
-                            <h1>KurtleTurtle</h1>
-                            <button>EDIT PROFILE</button>
-                            <button>...</button>
+                            <img id="profileImage" src="./img/fortnite.jpg" alt="icon">
+                            <h1 id="profileName">KurtleTurtle</h1>
+                            <button id="editProfileBtn">EDIT PROFILE</button>
+                        </div>
+                        <div id="editProfileModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2>Edit Profile</h2>
+                                <form id="editProfileForm">
+                                    <label for="name">Username:</label>
+                                    <input type="text" id="name" name="name" value="KurtleTurtle">
+                                    <label for="image">Profile Image URL:</label>
+                                    <input type="text" id="image" name="image" value="./img/fortnite.jpg">
+                                    <button type="submit">Save Changes</button>
+                                </form>
+                            </div>
                         </div>
                         <div class="middle-account">
                             <p><img src="./img/fortnite.jpg" alt="icon"></p>
@@ -233,4 +245,5 @@
                 </div>
             </footer>
         </body>
+    <script src="./script.js"></script>
 </html>
