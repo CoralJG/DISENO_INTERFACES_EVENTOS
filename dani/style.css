@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Playfair Display', serif;
+}
+body{
+
+    margin: 0px;
+    padding: 0px;
+    background-color: #331a38;
+
+}
+nav{
+    height: 10vh;
+    max-width: 100%;
+    background-color: #331a38;
+    color: white;
+    border: black 1px solid;
+}
+.nav ul {
+    list-style-type: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.nav li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.nav img{
+    width: 30px;
+}
+
+.nav li a:hover {
+    color: rgb(182, 182, 182);
+}
+
+
+.nav li {
+    float: left;
+}
+
+#li-derecha {
+    float: right;
+}
+
+.nav input {
+    padding: 10px;
+    margin-right: 1px;
+    border: none;
+    font-size: 10px;
+    border-radius: 20px;
+    background-color: #503c5a;
+
+}
+
+.nav input::placeholder {
+    color: white;
+
+}
+
+.nav input:hover {
+    background-color: #6e517c;
+}
+
+
+.nav button {
+    padding: 6px;
+    margin-top: 17px;
+    margin-right: 16px;
+    border: none;
+    border-radius: 20px;
+    background-color: #43b5a0;
+    color: white;
+}
+
+.nav button:hover {
+    background-color: #348d7d;
+    cursor: pointer;
+}
+
+
+.carrito{
+    height: 89.5vh;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    border: white 1px solid;
+
+}
+.contenido{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2%;
+    padding-left: 2%;
+    border: white 1px solid;
+}
+.productos{
+    width: 100%;
+    height: 90%;
+}
+.producto{
+    width: 90%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    background-color:  #503c5a;
+    margin-top: 1%;
+    border-radius: 4px;
+}
+
+.titulo{
+    margin-left: 5%;
+    padding-top: 1%;
+    display: flex;
+    flex-direction: column;
+}
+.producto h1{
+    margin-left: 40%;
+    padding-top: 3%;
+}
+.total{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    padding-left: 0;
+}
+.total button{
+    margin-top: 25%;
+    padding: 5% 20%;
+    color: white;
+    background-color:  #503c5a;
+    border-radius: 5px;
+    font-family: 'Playfair Display', serif;
+}
+.precio{
+    width: 70%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25%;
+    background-color:  #78558a;
+    border-radius:4px;
+}
+hr{
+    width: 50%;
+    color: white;
+}
+.totalpagar{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 5% 10% 0% 10%;
+}
+.final{
+    margin-left: 3%;
+}
+.boton:hover{
+    background-color:#78558a ;
+}
