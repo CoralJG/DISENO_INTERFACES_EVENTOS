@@ -126,17 +126,28 @@ nav{
     border-radius: 4px;
 }
 .info{
-    margin-left: 7%;
+    width: 70%;
+    margin-left: 3%;
     display: flex;
     flex-direction: column;
+    font-size: smaller;
+}
+.info h3{
+    padding-top: 1%;
+}
+.info p{
+    margin-top: 0%;
+    max-width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .valor{
-    margin-left: 55%;
-    padding-top: 3%;
+    padding-top: 2%;
 }
 .eliminar{
     width: 11%;
-    margin-left: 8.5%;
+    margin-left: 5.5%;
     background-color: #78558a;
     color: white;
     border-radius: 4px;

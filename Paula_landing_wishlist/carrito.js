@@ -23,7 +23,7 @@ function mostrarCarrito() {
                 <img src="${juego.imagen}" alt="${juego.titulo}">
                 <div class="info">
                     <h3>${juego.titulo}</h3>
-                    <p>${juego.descripcion}</p>
+                    <p>${juego.description}</p>
                 </div>
                 <div class="valor">
                     <p>${juego.precio}</p>
