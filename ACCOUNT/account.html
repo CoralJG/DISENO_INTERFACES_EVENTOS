@@ -1,42 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+</html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/5898c5cb3b.js" crossorigin="anonymous"></script>
         <title>Account View</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div class="shadow">
-            <nav>
-                <div class="container">
-                    <ul class="navbar-menu">
-                        <li><img src="./img/fortnite.jpg" alt="profile"></li>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Store</a></li>
-                        <li><a href="#">Library</a></li>
-                        <li>
-                            <input type="text" placeholder="Search...">
-                            <button>Search</button>
-                        </li>
-                        <ul class="navbar-right">
-                            <li><a href="#">Cart</a></li>
-                            <li><a href="#">List</a></li>
-                            <li><a href="#">Account</a></li>
-                        </ul>
-                    </ul>
-                </div>
-            </nav>
+            <nav class="nav">
+				<ul>
+					<li><a href=""><img src="./img/logo_epic.png" alt=""></a></li>
+					<li><a href="">Home</a></li>
+					<li><a href="">Store</a></li>
+					<li><a href="">Library</a></li>
+					<li><input type="text" placeholder="Search"> <button>Search</button></li>
+		
+		
+					<li id="li-derecha"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+					<li id="li-derecha"><a href=""><i class="fa-solid fa-heart"></i></a></li>
+					<li id="li-derecha"><a href=""><i class="fa-solid fa-user"></i></a></li>
+				</ul>
+			</nav>
         </div>
         <main>
             <div class="profile-coloring">
                 <section class="profile-top">
                     <div class="container">
                         <div class="profile-account">
-                            <img src="./img/fortnite.jpg" alt="icon">
-                            <h1>KurtleTurtle</h1>
-                            <button>EDIT PROFILE</button>
-                            <button>...</button>
+                            <img id="profileImage" src="./img/fortnite.jpg" alt="icon">
+                            <h1 id="profileName">KurtleTurtle</h1>
+                            <button id="editProfileBtn">EDIT PROFILE</button>
+                        </div>
+                        <div id="editProfileModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2>Edit Profile</h2>
+                                <form id="editProfileForm">
+                                    <label for="name">Username:</label>
+                                    <input type="text" id="name" name="name" value="KurtleTurtle">
+                                    <label for="image">Profile Image URL:</label>
+                                    <input type="text" id="image" name="image" value="./img/fortnite.jpg">
+                                    <button type="submit">Save Changes</button>
+                                </form>
+                            </div>
                         </div>
                         <div class="middle-account">
                             <p><img src="./img/fortnite.jpg" alt="icon"></p>
@@ -237,4 +245,5 @@
                 </div>
             </footer>
         </body>
-    </html>
+    <script src="./script.js"></script>
+</html>
