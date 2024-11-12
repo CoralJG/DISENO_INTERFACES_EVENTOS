@@ -7,7 +7,8 @@ function añadirAlCarrito(evento) {
     const juego = {
         titulo: contenedorJuego.querySelector('.wishlist_title h2').textContent,
         precio: contenedorJuego.querySelector('.Wishlist_price h3').textContent,
-        imagen: contenedorJuego.querySelector('.wishlist_img img').src
+        imagen: contenedorJuego.querySelector('.wishlist_img img').src,
+        description: contenedorJuego.querySelector('.Wishlist_description').textContent
     };
     
     // Recupera el carrito actual del localStorage o crea uno nuevo si no existe
