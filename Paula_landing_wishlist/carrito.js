@@ -64,5 +64,16 @@ function eliminarProducto(evento) {
     mostrarCarrito();
 }
 
+function comprar(){
+    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    let biblioteca = JSON.parse(localStorage.getItem('biblioteca')) || [];
+    Object.assign(biblioteca, carrito);
+    localStorage.setItem('biblioteca', JSON.stringify(biblioteca));
+    localStorage.removeItem('carrito');
+    mostrarCarrito();
+}
+
 // Ejecuta la función mostrarCarrito cuando se carga la página del carrito
 document.addEventListener('DOMContentLoaded', mostrarCarrito);
+
+let boton=document.querySelector('.boton').addEventListener('click', comprar);
