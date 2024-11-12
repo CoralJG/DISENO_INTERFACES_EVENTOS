@@ -30,12 +30,30 @@ body{
 	margin: 10px 10px;
 }
 
-.grid-profile{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 30px;
-	margin: 20px -5px;
+/*PROFILE*/
+.profile-top {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.profile-coloring {
+    background-color: #fa448d1a;
+    width: 100%;
+}
+
+.profile-account,
+.middle-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.middle-account img{
+    width: 60px;
 }
 
 .grid-profile button{
