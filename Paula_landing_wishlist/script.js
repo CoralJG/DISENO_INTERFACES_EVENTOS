@@ -8,7 +8,7 @@ let step = 1;
     movement.scrollLeft = movement.scrollLeft + step;
 	if (movement.scrollLeft === maxScrollLeft) {
       step = step * -1;
-    } else if (movement.scrollLeft === 0) {
+    } else if (movement.scrollLeft === 0){
       step = step * -1; 
     }
   }, 10);

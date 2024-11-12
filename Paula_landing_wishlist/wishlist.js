@@ -1,5 +1,6 @@
 // Función que se ejecuta cuando se hace clic en "Añadir al carrito"
 function añadirAlCarrito(evento) {
+
     // Obtiene el contenedor del juego que contiene el botón clicado
     const contenedorJuego = evento.target.closest('.wishlist_container_gris');
     
