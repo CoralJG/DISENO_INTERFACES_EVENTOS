@@ -8,7 +8,7 @@ function añadirAlCarrito() {
     let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
     carrito.push(juego);
     localStorage.setItem('carrito', JSON.stringify(carrito));
-    window.location.href = 'carrito.html';
+    window.location.href = '../Paula_landing_wishlist/carrito.html';
 }
 
 function añadirAWishlist() {
