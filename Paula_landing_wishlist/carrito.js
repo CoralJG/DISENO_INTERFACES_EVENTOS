@@ -16,7 +16,7 @@ function mostrarCarrito() {
     contenedorProductos.innerHTML = '';
 
     // Itera sobre cada juego en el carrito
-    carrito.forEach((juego, index) => {
+    carrito.forEach((juego) => {
         // Crea un bloque HTML para cada producto y lo añade al contenedor
         const productoHTML = `
             <div class="producto">
@@ -28,7 +28,7 @@ function mostrarCarrito() {
                 <div class="valor">
                     <p>${juego.precio}</p>
                 </div>
-                <button class="eliminar" data-index="${index}">Eliminar</button>
+                <button class="eliminar">Eliminar</button>
             </div>
         `;
         contenedorProductos.innerHTML += productoHTML;
@@ -62,6 +62,7 @@ function eliminarProducto(evento) {
     
     // Vuelve a mostrar el carrito actualizado
     mostrarCarrito();
+    
 }
 
 function comprar(){
@@ -70,7 +71,7 @@ function comprar(){
     Object.assign(biblioteca, carrito);
     localStorage.setItem('biblioteca', JSON.stringify(biblioteca));
     localStorage.removeItem('carrito');
-    mostrarCarrito();
+    window.location.href = '../Library/index.html';
 }
 
 // Ejecuta la función mostrarCarrito cuando se carga la página del carrito
