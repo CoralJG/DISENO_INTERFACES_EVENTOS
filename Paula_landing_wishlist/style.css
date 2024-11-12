@@ -26,6 +26,7 @@ main {
     margin-right: 20px;
     overflow: hidden;
     background-color: transparent;
+    z-index: 1;
 }
 
 .nav li a {
@@ -95,6 +96,7 @@ main {
 	width: 100vw;
 	/* height: 100vh; */
 	position: relative;
+    z-index: -1;
 }
 #items
 {
@@ -307,10 +309,49 @@ main {
 }
 
 
+/* modal */
+
+.search-container {
+    position: relative;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 9999; 
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-height: 300px; 
+    overflow-y: auto; 
+}
+
+.juego {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.juego:hover {
+    background-color: #f0f0f0;
+}
+
+.filtro {
+    display: none;
+}
+
+.nav {
+    position: relative;
+    z-index: 1;
+}
 
 
-
-
+/* carrito */
 .carrito{
     height: 89.5vh;
     display: flex;
