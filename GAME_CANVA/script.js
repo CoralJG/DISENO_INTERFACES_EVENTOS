@@ -23,14 +23,14 @@ document.addEventListener('DOMContentLoaded', () => {
         const price = document.getElementById('price').textContent;
         const image = document.getElementById('image').src;
 
-        const product = {
+        const juego = {
             name: title,
             description: description,
             price: price,
             image: image
         };
 
-        wishlist.push(product);
+        wishlist.push(juego);
         localStorage.setItem('wishlist', JSON.stringify(wishlist));
         
         alert('¡Producto añadido a la wishlist ✅!');
