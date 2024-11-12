@@ -9,6 +9,13 @@ body {
     background-color:#331a38;
     color: white;
 	overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+}
+
+main {
+    flex: 1 0 auto;
 }
 
 /* nav */
@@ -86,7 +93,7 @@ body {
 #carrusel
 {
 	width: 100vw;
-	height: 100px;
+	/* height: 100vh; */
 	position: relative;
 }
 #items
@@ -107,14 +114,9 @@ body {
 /* footer */
 
 .footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    flex-shrink: 0; /* Evita que el footer se encoja */
     width: 100%;
-    padding-top: 25px;
-    padding-left: 45px;
-    padding-right: 45px;
-    padding-bottom: 25px;
+    padding: 25px 45px;
     background-color: #503c5a;
 
 }
@@ -302,4 +304,92 @@ body {
     'img rating rating'
     'img buttons buttons'
     ;
+}
+
+
+
+
+
+
+.carrito{
+    height: 89.5vh;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    border: white 1px solid;
+
+}
+.contenido{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2%;
+    padding-left: 2%;
+    border: white 1px solid;
+}
+.productos{
+    width: 100%;
+    height: 90%;
+}
+.producto{
+    width: 90%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    background-color:  #503c5a;
+    margin-top: 1%;
+    border-radius: 4px;
+}
+
+.titulo{
+    margin-left: 5%;
+    padding-top: 1%;
+    display: flex;
+    flex-direction: column;
+}
+.producto h1{
+    margin-left: 40%;
+    padding-top: 3%;
+}
+.total{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    padding-left: 0;
+}
+.total button{
+    margin-top: 25%;
+    padding: 5% 20%;
+    color: white;
+    background-color:  #503c5a;
+    border-radius: 5px;
+    font-family: 'Playfair Display', serif;
+}
+.precio{
+    width: 70%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25%;
+    background-color:  #78558a;
+    border-radius:4px;
+}
+hr{
+    width: 50%;
+    color: white;
+}
+.totalpagar{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 5% 10% 0% 10%;
+}
+.final{
+    margin-left: 3%;
+}
+.boton:hover{
+    background-color:#78558a ;
 }
