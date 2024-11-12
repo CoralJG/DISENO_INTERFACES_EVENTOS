@@ -1,49 +1,208 @@
-*{
-	padding: 0px;
-	margin: 0px;
-	box-sizing: border-box;
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
 
-body{
-	background-color: #000000;
-	color: #ffffff;
+body {
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: #331a38;
+    font-family: Arial, sans-serif;
 }
 
-.profile{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	justify-content: center;
-	margin: 10% auto;
-	gap: 50px;
+.shadow {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
 }
 
-.profile img{
-	width: 300px;
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
-.flex-profile{
-	display: flex;
-	align-items: center;
-	gap: 20px;
-	margin: 10px 10px;
+/*MENU*/
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    padding: 20px 0;
 }
 
-.grid-profile{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 30px;
-	margin: 20px -5px;
+.navbar-menu li {
+    margin-right: 15px;
 }
 
-.grid-profile button{
-	background-color: green;
-	border: none;
-	padding: 10px;
+.navbar-menu li a:hover{
+    color:#43b5a0;
+    transition: 0.5s;
+    font-size:large;
 }
 
-.overview{
-	
+.navbar-menu li img {
+    width: 100px;
+}
+
+.navbar-menu li a,
+.navbar-right li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-menu input{
+    border: none;
+    height: 30px;
+}
+
+.navbar-menu button{
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.navbar-menu button:hover{
+    background-color: rgba(0, 128, 0, 0.548);
+}
+
+.navbar-right {
+    display: flex;
+    margin-left: 900px;
+    list-style: none;
+    gap: 10px;
+}
+
+/*PROFILE*/
+.profile-top {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.profile-coloring {
+    background-color: #fa448d1a;
+    width: 100%;
+}
+
+.profile-account,
+.middle-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.middle-account img{
+    width: 60px;
+}
+
+.profile-account img{
+    width: 50px;
+}
+
+.profile-account button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.profile-account button:hover{
+    background-color: rgba(0, 128, 0, 0.548);
+}
+
+.profile-account p {
+    display: flex;
+    gap: 10px;
+}
+
+/*OVERVIEW*/
+.overview-coloring {
+    background-color: #fa448d2a;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.overview {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 0 20px;
+}
+
+.overview-header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.overview p {
+    font-weight: bold;
+}
+
+.overview hr {
+    width: 100%;
+    border: none;
+    height: 2px;
+    background-color: white;
+    margin: 10px 0;
+}
+
+.overview-top,
+.overview-account {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.overview-account-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff33;
+    padding: 10px;
+    border-radius: 5px;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.card img {
+    width: 90px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.grid-card {
+    display: flex;
+    flex-direction: column;
+    margin: auto 20px;
+    gap: 5px;
+}
+
+/*FOOTER*/
+.footer-coloring{
+    background-color:#fec7593c ;
+    padding: 30px;
 }
