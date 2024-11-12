@@ -1,38 +1,29 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const carritoIcon = document.querySelector('.fa-cart-shopping');
-    const wishlistIcon = document.querySelector('.fa-heart');
-    const accountIcon = document.querySelector('.fa-user');
-    const addwishlistButton = document.getElementById('addWishlist');
+function añadirAlCarrito() {
+    const juego = {
+        titulo: document.getElementById('title').textContent,
+        descripcion: document.getElementById('description').textContent,
+        precio: document.getElementById('price').textContent,
+        imagen: document.getElementById('image').src
+    };
+    let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    carrito.push(juego);
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+    window.location.href = 'carrito.html';
+}
 
-    carritoIcon.addEventListener('click', () => {
-        window.location.href = 'carrito.html'; 
-    });
+function añadirAWishlist() {
+    const juego = {
+        titulo: document.getElementById('title').textContent,
+        descripcion: document.getElementById('description').textContent,
+        precio: document.getElementById('price').textContent,
+        imagen: document.getElementById('image').src
+    };
 
-    wishlistIcon.addEventListener('click', () => {
-        window.location.href = 'whishlist.html'; 
-    });
+    let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+    wishlist.push(juego);
+    localStorage.setItem('wishlist', JSON.stringify(wishlist));
+    alert("Juego añadido a la wishlist");
+}
 
-    accountIcon.addEventListener('click', () => {
-        window.location.href = 'account.html'; 
-    });
-
-    addwishlistButton.addEventListener('click', () => {
-        let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
-        const title = document.getElementById('title').textContent;
-        const description = document.getElementById('description').textContent;
-        const price = document.getElementById('price').textContent;
-        const image = document.getElementById('image').src;
-
-        const juego = {
-            name: title,
-            description: description,
-            price: price,
-            image: image
-        };
-
-        wishlist.push(juego);
-        localStorage.setItem('wishlist', JSON.stringify(wishlist));
-        
-        alert('¡Producto añadido a la wishlist ✅!');
-    });
-});
+document.getElementById('addCarrito').addEventListener('click', añadirAlCarrito);
+document.getElementById('addWishlist').addEventListener('click', añadirAWishlist);
