@@ -15,3 +15,35 @@ let step = 1;
 };
 
 //start();
+
+
+document.addEventListener("keyup", e => {
+  if (e.target.matches("#buscador")) {
+      const listaJuegos = document.getElementById("listaJuegos");
+
+      if (e.key === "Escape") e.target.value = "";
+
+      const textoBusqueda = e.target.value.toLowerCase();
+
+      document.querySelectorAll(".juego").forEach(juego => {
+          const coincide = juego.textContent.toLowerCase().includes(textoBusqueda);
+          juego.classList.toggle("filtro", !coincide);
+      });
+
+      // Mostrar u ocultar la lista de juegos
+      if (textoBusqueda.length > 0) {
+          listaJuegos.style.display = 'block';
+      } else {
+          listaJuegos.style.display = 'none';
+      }
+  }
+});
+
+// Cerrar la lista si se hace clic fuera de ella
+document.addEventListener('click', function(event) {
+  const listaJuegos = document.getElementById("listaJuegos");
+  const buscador = document.getElementById("buscador");
+  if (!listaJuegos.contains(event.target) && event.target !== buscador) {
+      listaJuegos.style.display = 'none';
+  }
+});
