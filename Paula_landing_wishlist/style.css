@@ -354,6 +354,10 @@ main {
 
 /* modal */
 
+#listaJuegos{
+    display: none;
+}
+
 .search-container {
     position: relative;
 }
