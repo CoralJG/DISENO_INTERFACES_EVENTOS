@@ -1,37 +1,31 @@
-function showLibrary() {
-	const gameContainer = document.querySelector('.list_games');
-	const games = JSON.parse(localStorage.getItem('libreria')) || [];
-	
-	games.forEach((juego) =>{
-		const htmlAdd = `
-			<div class="games">
-				<img src="${juego.imagen}" alt="${juego.titulo}">
-				<div class="description-game">
-					<h3>${juego.titulo}</h3>
-					<p>${juego.description}</p>
-					<button class="del">Delete</button>
-				</div>
-			</div>`;
+function mostrarBiblioteca() {
+    const contenedorJuegos = document.querySelector('.list_games');
+    const biblioteca = JSON.parse(localStorage.getItem('libreria')) || [];
+    contenedorJuegos.innerHTML = '';
+    biblioteca.forEach((juego, index) => {
+        const juegoHTML = `
+            <div class="games">
+                <img src="${juego.imagen}" alt="${juego.titulo}">
+                <div class="description-game">
+                    <h3>${juego.titulo}</h3>
+                    <p>${juego.description}</p>
+                    <button class="del" data-index="${index}">Delete</button>
+                </div>
+            </div>
+        `;
+        contenedorJuegos.innerHTML += juegoHTML;
+    });
 
-			gameContainer.innerHTML += htmlAdd;
-	});
-
-	const deleteButtons = document.querySelectorAll('.del');
-	deleteButtons.forEach(button => {
-		button.addEventListener('click', delProduct);
-	});
+    document.querySelectorAll('.del').forEach(boton => {
+        boton.addEventListener('click', eliminarJuego);
+    });
+}
+function eliminarJuego(event) {
+    const index = event.target.dataset.index;
+    let biblioteca = JSON.parse(localStorage.getItem('libreria')) || [];
+    biblioteca.splice(index, 1);
+    localStorage.setItem('libreria', JSON.stringify(biblioteca));
+    mostrarBiblioteca();
 }
 
-const delProduct = (event) =>{
-	const index = event.target.dataset.index;
-
-	let games = JSON.parse(localStorage.getItem('biblioteca')) || [];
-
-	games.splice(index,1);
-
-	localStorage.setItem('biblioteca',JSON.stringify(games));
-
-	showLibrary();
-}
-
-document.addEventListener('DOMContentLoaded',showLibrary);
+document.addEventListener('DOMContentLoaded', mostrarBiblioteca);
