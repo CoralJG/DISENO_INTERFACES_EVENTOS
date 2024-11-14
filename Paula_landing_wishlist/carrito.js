@@ -16,7 +16,7 @@ function mostrarCarrito() {
     contenedorProductos.innerHTML = '';
 
     // Itera sobre cada juego en el carrito
-    carrito.forEach((juego) => {
+    carrito.forEach((juego, index) => {
         // Crea un bloque HTML para cada producto y lo añade al contenedor
         const productoHTML = `
             <div class="producto">
@@ -28,7 +28,7 @@ function mostrarCarrito() {
                 <div class="valor">
                     <p>${juego.precio}</p>
                 </div>
-                <button class="eliminar">Eliminar</button>
+                <button class="eliminar" data-index="${index}">Eliminar</button>
             </div>
         `;
         contenedorProductos.innerHTML += productoHTML;

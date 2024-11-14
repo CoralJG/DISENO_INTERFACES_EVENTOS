@@ -1,7 +1,7 @@
 function añadirAlCarrito() {
     const juego = {
         titulo: document.getElementById('title').textContent,
-        descripcion: document.getElementById('description').textContent,
+        description: document.getElementById('description').textContent,
         precio: document.getElementById('price').textContent,
         imagen: document.getElementById('image').src
     };
