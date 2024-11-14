@@ -66,3 +66,25 @@ function eliminarWhishlist(evento) {
 
 // Cargar el wishlist al cargar el contenido de la página
 document.addEventListener('DOMContentLoaded', mostrarWhislist);
+
+
+
+function landingPage(){
+    document.getElementById('landingPage').addEventListener('click', landingPage);
+    window.location.href = '../Paula_landing_wishlist/index.html';
+}
+
+function accountPage(){
+    document.getElementById('accountPage').addEventListener('click', accountPage);
+    window.location.href = '../ACCOUNT/account.html';
+}
+
+function cartPage(){
+    document.getElementById('cartPage').addEventListener('click', cartPage);
+    window.location.href = '../Paula_landing_wishlist/carrito.html';
+}
+
+function libraryPage(){
+    document.getElementById('libraryPage').addEventListener('click', libraryPage);
+    window.location.href = '../Library/index.html';
+}

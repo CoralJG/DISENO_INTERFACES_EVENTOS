@@ -68,7 +68,7 @@ body {
     border: none;
     font-size: 10px;
     border-radius: 20px;
-    background-color: #503c5a;
+    background-color: #331a38;
     color: white;
 }
 
@@ -103,7 +103,7 @@ body {
 }
 
 .profile-coloring {
-    background-color: #fa448d1a;
+    background-color:  #28152c;
     width: 100%;
 }
 
@@ -181,7 +181,6 @@ body {
 
 /*OVERVIEW*/
 .overview-coloring {
-    background-color: #fa448d2a;
     width: 100%;
     padding: 20px 0;
 }
@@ -257,6 +256,5 @@ body {
 
 /*FOOTER*/
 .footer-coloring{
-    background-color:#fec7593c ;
     padding: 30px;
 }
