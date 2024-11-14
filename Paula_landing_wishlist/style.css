@@ -113,6 +113,49 @@ main {
 	object-fit: cover;
 }
 
+/*Game Cards*/
+
+.game-cards {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+.card {
+    width: 22%;
+    padding: 20px;
+    background-color: rgb(24, 24, 24);
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    scale: 1.01;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+}
+
+.card p {
+    color: #b3b3b3;
+}
+
 /* footer */
 
 .footer {

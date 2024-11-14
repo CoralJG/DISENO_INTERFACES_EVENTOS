@@ -69,3 +69,23 @@ function libraryPage(){
   document.getElementById('libraryPage').addEventListener('click', libraryPage);
   window.location.href = '../Library/index.html';
 }
+
+function gamePage1(){
+  document.getElementById('gamePage1').addEventListener('click', gamePage1);
+  window.location.href = '../GAME_CANVA/game1.html';
+}
+
+function gamePage2(){
+  document.getElementById('gamePage2').addEventListener('click', gamePage2);
+  window.location.href = '../GAME_CANVA/game1.html';
+}
+
+function gamePage3(){
+  document.getElementById('gamePage3').addEventListener('click', gamePage3);
+  window.location.href = '../GAME_CANVA/game1.html';
+}
+
+function gamePage4(){
+  document.getElementById('gamePage4').addEventListener('click', gamePage4);
+  window.location.href = '../GAME_CANVA/game1.html';
+}
