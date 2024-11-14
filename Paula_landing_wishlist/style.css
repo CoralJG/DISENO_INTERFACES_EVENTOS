@@ -262,7 +262,8 @@ main {
 }
 
 .wishlist_img img{
-    width: 45%;
+    width: 80%;
+    height: 100%;
     border-radius: 10px;
 }
 
@@ -346,7 +347,6 @@ main {
     border-radius: 10px;
     background-color: #503c5a;
     display: grid;
-    grid-template-columns: auto 1fr fit-content(50%);
     justify-items: normal;
     grid-template-areas: 
     'img title price'
