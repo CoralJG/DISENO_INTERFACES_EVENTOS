@@ -93,34 +93,30 @@ main {
 /*Carrusel */
 #carrusel {
     position: relative;
-    width: 100%;
-    max-width: 100%;
+    width: 1920px;
     overflow: hidden;
     margin: auto;
 }
 
 #items {
     display: flex;
-    transition: transform 1s ease-in-out;
+	transition: transform 1s ease-in-out;
 }
 
 .item {
-    min-width: 100%;
-    flex-shrink: 0;
-    display: block; 
+    width: 100%; 
 }
 
 .item img {
-    width: 100%;
-    height: auto;
+	width: 100vw;
+	height: 800px;
 }
-
-
 
 /*Game Cards*/
 
 .game-cards {
     display: flex;
+	flex-wrap: wrap;
     justify-content: space-around;
     margin: 20px auto;
     padding: 20px;
@@ -129,7 +125,7 @@ main {
 }
 
 .card {
-    width: 22%;
+    width: 260px;
     padding: 20px;
     background-color: rgb(24, 24, 24);
     color: white;
@@ -262,7 +258,8 @@ main {
 }
 
 .wishlist_img img{
-    width: 45%;
+    width: 80%;
+    height: 100%;
     border-radius: 10px;
 }
 
@@ -346,7 +343,6 @@ main {
     border-radius: 10px;
     background-color: #503c5a;
     display: grid;
-    grid-template-columns: auto 1fr fit-content(50%);
     justify-items: normal;
     grid-template-areas: 
     'img title price'
