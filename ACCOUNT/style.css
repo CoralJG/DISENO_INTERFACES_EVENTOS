@@ -154,8 +154,8 @@ body {
 }
 
 /*PROFILE*/
-.middle-account img{
-    width: 60px;
+.middle-account p i{
+    cursor: pointer;
 }
 
 .profile-account img{
