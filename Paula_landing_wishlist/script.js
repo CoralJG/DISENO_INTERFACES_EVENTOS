@@ -1,22 +1,33 @@
-var movement = document.getElementById("items");
-var maxScrollLeft = movement.scrollWidth - movement.clientWidth;
-var intervalo;
 
-const start = () => {
-let step = 1;
-  intervalo = setInterval(function () {
-    movement.scrollLeft = movement.scrollLeft + step;
-	if (movement.scrollLeft === maxScrollLeft) {
-      step = step * -1;
-    } else if (movement.scrollLeft === 0) {
-      step = step * -1; 
-    }
-  }, 10);
-};
+//Movimiento Carrusel
+document.addEventListener('DOMContentLoaded', function () {
+  const carrusel = document.getElementById('items');
+  const items = carrusel.getElementsByClassName('item');
+  const totalItems = items.length;
+  let index = 0;
 
-//start();
+  // Función para mostrar el siguiente item en el carrusel
+  function mostrarSiguiente() {
+      // Ocultar el elemento actual
+      items[index].classList.remove('active');
+      // Calcular el siguiente índice
+      index = (index + 1) % totalItems;
+      // Mostrar el siguiente elemento
+      items[index].classList.add('active');
+      
+      // Mover el carrusel para mostrar el siguiente item
+      carrusel.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  // Iniciar el carrusel automático cada 3 segundos
+  setInterval(mostrarSiguiente, 3000); // Cambia cada 3 segundos
+
+  // Inicializa el primer elemento
+  items[index].classList.add('active');
+});
 
 
+// Buscador
 document.addEventListener("keyup", e => {
   if (e.target.matches("#buscador")) {
       const listaJuegos = document.getElementById("listaJuegos");

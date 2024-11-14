@@ -91,27 +91,31 @@ main {
 }
 
 /*Carrusel */
-#carrusel
-{
-	width: 100vw;
-	/* height: 100vh; */
-	position: relative;
-    z-index: -1;
+#carrusel {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    margin: auto;
 }
-#items
-{
-	display: flex;
+
+#items {
+    display: flex;
+    transition: transform 1s ease-in-out;
 }
-.item
-{
-	gap: 20px;
+
+.item {
+    min-width: 100%;
+    flex-shrink: 0;
+    display: block; 
 }
-.item>img
-{
-	width: 60vh;
-	height: 80vh;
-	object-fit: cover;
+
+.item img {
+    width: 100%;
+    height: auto;
 }
+
+
 
 /*Game Cards*/
 
