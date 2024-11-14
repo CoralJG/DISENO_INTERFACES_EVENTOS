@@ -224,6 +224,17 @@ body {
     margin: 20px auto;
 }
 
+.overview-account-header select{
+    color: white;
+    border: none;
+    background-color: #a75bee8a;
+    height: 30px;
+}
+
+.overview-account-header select option{
+    background-color: #4b2e668a;
+}
+
 .cards {
     display: flex;
     flex-wrap: wrap;
