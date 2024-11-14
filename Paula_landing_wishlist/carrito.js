@@ -67,9 +67,11 @@ function eliminarProducto(evento) {
 
 function comprar(){
     let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
-    let biblioteca = JSON.parse(localStorage.getItem('biblioteca')) || [];
-    Object.assign(biblioteca, carrito);
-    localStorage.setItem('biblioteca', JSON.stringify(biblioteca));
+    let libreria = JSON.parse(localStorage.getItem('libreria')) || [];
+    carrito.forEach((compra) => {
+        libreria.push(compra);
+    }); 
+    localStorage.setItem('libreria', JSON.stringify(libreria));
     localStorage.removeItem('carrito');
     window.location.href = '../Library/index.html';
 }

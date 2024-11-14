@@ -1,10 +1,10 @@
-const showLibrary =  () => {
-	const gameContainer = document.querySelector('#list_games');
-	const games = JSON.parse(localStorage.getItem('biblioteca')) || [];
+function showLibrary() {
+	const gameContainer = document.querySelector('.list_games');
+	const games = JSON.parse(localStorage.getItem('libreria')) || [];
 	
 	games.forEach((juego) =>{
 		const htmlAdd = `
-			<div class="items">
+			<div class="games">
 				<img src="${juego.imagen}" alt="${juego.titulo}">
 				<div class="description-game">
 					<h3>${juego.titulo}</h3>
