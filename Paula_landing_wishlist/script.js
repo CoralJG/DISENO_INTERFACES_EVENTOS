@@ -89,3 +89,19 @@ function gamePage4(){
   document.getElementById('gamePage4').addEventListener('click', gamePage4);
   window.location.href = '../GAME_CANVA/game1.html';
 }
+
+
+// Seleccionar el campo de búsqueda
+const searchInput = document.querySelector('.buscador');
+
+// Aplicar evento focus
+searchInput.addEventListener('focus', function() {
+    this.style.backgroundColor = '#331a38';
+    this.style.outline = '2px solid #007bff';
+});
+
+// Aplicar evento blur
+searchInput.addEventListener('blur', function() {
+    this.style.backgroundColor = '';
+    this.style.outline = '';
+});
