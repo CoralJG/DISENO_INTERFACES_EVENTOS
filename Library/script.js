@@ -2,46 +2,65 @@ function mostrarBiblioteca() {
     const contenedorJuegos = document.querySelector('.list_games');
     const biblioteca = JSON.parse(localStorage.getItem('libreria')) || [];
     contenedorJuegos.innerHTML = '';
-    biblioteca.forEach((juego) => {
+
+    biblioteca.forEach((juego, index) => {
         const juegoHTML = `
-				<div class="games" style="background-image: url(${juego.imagen}); background-size:contain; background-repeat: no-repeat;">
+            <div class="games-container">
+                <div class="games" 
+                     data-index="${index}" 
+                     style="background-image: url(${juego.imagen});">
+                </div>
+                <div class="delete-cont">
+                    <button id="instal">Install</button>
+                    <button id="del" data-index="${index}">Delete</button>
+                </div>
             </div>
         `;
         contenedorJuegos.innerHTML += juegoHTML;
     });
 
-	let games_cont = document.querySelector('.games');
+    const gamesCards = document.querySelectorAll('.games');
+    const deleteConts = document.querySelectorAll('.delete-cont');
 
-	games_cont.addEventListener('click', () => {
-		const new_html = 
-		`<div class="delete_cont" style="opacity: 0; transform: translateY(20px); transition: opacity 2s ease, transform 2s ease;">
-			<div style="padding:10px;">
-				<button id="instal" style="width:100px; background-color:#02911F; border:none; height: 25px; border-radius: 5px; cursor: pointer;">Install</button>
-				<button id="del" style="width:100px; margin-left:180px; background-color: #800000; border:none; height: 25px; border-radius: 5px; cursor: pointer;">Delete</button>
-			</div>
-		</div>`
-		contenedorJuegos.innerHTML += new_html;
-	  
-		const newDiv = contenedorJuegos.querySelector('.delete_cont');
-		
-		setTimeout(() => {
-		  newDiv.style.opacity = '1';
-		  newDiv.style.transform = 'translateY(0)';
-		}, 10);
+    gamesCards.forEach((games_cont, index) => {
+        games_cont.addEventListener('click', () => {
+            deleteConts.forEach((menu, menuIndex) => {
+                if (menuIndex !== index) {
+                    menu.style.opacity = '0';
+                    menu.style.transform = 'translateY(20px)';
+                    setTimeout(() => {
+                        menu.style.display = 'none';
+                    }, 2000); 
+                }
+            });
 
-		document.querySelectorAll('#del').forEach(boton => {
-			boton.addEventListener('click', eliminarJuego);
-		});
+            const deleteCont = deleteConts[index];
+            if (deleteCont.style.display === 'none' || !deleteCont.style.display) {
+                deleteCont.style.display = 'block';
+                setTimeout(() => {
+                    deleteCont.style.opacity = '1';
+                    deleteCont.style.transform = 'translateY(0)';
+                }, 10);
+            } else {
+                deleteCont.style.opacity = '0';
+                deleteCont.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    deleteCont.style.display = 'none';
+                }, 2000);
+            }
+        });
+    });
 
-		document.querySelectorAll('#instal').forEach(boton => {
-			boton.addEventListener('click', alert_install);
-		});
-	  });
+    document.querySelectorAll('#del').forEach(button => {
+        button.addEventListener('click', eliminarJuego);
+    });
+    document.querySelectorAll('#instal').forEach(button => {
+        button.addEventListener('click', alert_install);
+    });
 }
 
-function alert_install()
-{
-	alert('Juego instalado');
+function alert_install() {
+    alert('Juego instalado');
 }
 
 function eliminarJuego(event) {
