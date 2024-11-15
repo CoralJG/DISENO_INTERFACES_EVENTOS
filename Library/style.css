@@ -87,29 +87,32 @@ body
     background-color: #348d7d;
     cursor: pointer;
 }
+ /* Library */
 
 #library
 {
 	width: 75%;
 }
-
 main
 {
-	padding: 20px;
-	display: grid;
-	grid-template-columns: 20%,20%,20%,20%,20%;
-
+    padding: 20px;
 }
-
 h1
 {
 	padding-bottom: 20px;
 }
 
+.list_games
+{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    gap: 50px;
+}
+
 .games
 {
 	border: 2px solid black;
-	height: 255px;
+	height: 169px;
 	border-radius: 20px;
-	width: 400px;
+	width: 300px;
 }

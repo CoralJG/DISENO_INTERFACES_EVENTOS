@@ -4,7 +4,7 @@ function mostrarBiblioteca() {
     contenedorJuegos.innerHTML = '';
     biblioteca.forEach((juego) => {
         const juegoHTML = `
-            <div class="games" style="background-image: url(${juego.imagen}); background-size:cover;">
+				<div class="games" style="background-image: url(${juego.imagen}); background-size:contain; background-repeat: no-repeat;">
             </div>
         `;
         contenedorJuegos.innerHTML += juegoHTML;
