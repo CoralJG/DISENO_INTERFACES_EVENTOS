@@ -97,21 +97,19 @@ main
 {
 	padding: 20px;
 	display: grid;
-	grid-template-columns: 25%,25%,25%,25%,25%;
+	grid-template-columns: 20%,20%,20%,20%,20%;
 
 }
 
-.list_games
+h1
 {
-	display: flex;
-	gap: 50px;
-	width: 100vh;
-	height: 800px;
-	padding: 50px;
+	padding-bottom: 20px;
 }
 
-
-.games>img
+.games
 {
-	width: 200px;
+	border: 2px solid black;
+	height: 255px;
+	border-radius: 20px;
+	width: 400px;
 }
