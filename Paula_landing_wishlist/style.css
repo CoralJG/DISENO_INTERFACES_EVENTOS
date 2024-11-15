@@ -11,7 +11,7 @@ body {
 	overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    min-height: auto;
+    min-height: 100vh;
 }
 
 main {
@@ -169,7 +169,7 @@ main {
 /* footer */
 
 .footer {
-    flex-shrink: 0; /* Evita que el footer se encoja */
+    position: relative; /* Evita que el footer se encoja */
     width: 100%;
     padding: 25px 45px;
     background-color: #503c5a;
