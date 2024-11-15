@@ -291,6 +291,7 @@ main {
     padding: 6px;
     padding-left: 20px;
     border-radius: 5px;
+    width: 860px;
 }
 
 .Wishlist_rating:hover{
@@ -397,6 +398,7 @@ main {
 
 .juego {
     padding: 10px 0px;
+    margin: 0px !important;
     cursor: pointer;
     border: black 1px solid;
     background-color: #503c5a6b;
