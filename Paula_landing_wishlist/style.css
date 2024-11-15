@@ -34,7 +34,7 @@ main {
 
 .nav li a {
     display: block;
-    text-align: center;
+    
     padding: 14px 16px;
     text-decoration: none;
     color: white;
@@ -394,6 +394,9 @@ main {
 
 .juego:hover {
     background-color: #f0f0f0;
+}
+.juego a{
+    padding: 1px 0px!important;
 }
 
 .filtro {
