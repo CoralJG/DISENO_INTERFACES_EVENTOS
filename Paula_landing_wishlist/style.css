@@ -19,7 +19,9 @@ main {
 }
 
 /* nav */
-
+.nav{
+    height: 60px;
+}
 .nav ul {
 
     list-style-type: none;
@@ -359,7 +361,9 @@ main {
 /* modal */
 
 #listaJuegos{
-    display: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .search-container {
